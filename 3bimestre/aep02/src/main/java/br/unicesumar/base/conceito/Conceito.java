@@ -11,6 +11,7 @@ import br.unicesumar.base.avaliacao.Avaliacao;
 import br.unicesumar.base.avaliacao.Avaliacao.Nota;
 
 @Entity
+@Table(name = "CONCEITO")
 public class Conceito {
 
     @Id

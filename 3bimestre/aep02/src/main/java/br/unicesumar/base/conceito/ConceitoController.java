@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("api/conceito")
+@RequestMapping("api/conceito/")
 public class ConceitoController {
 
     @Autowired
@@ -29,20 +29,20 @@ public class ConceitoController {
         return conceitoRepo.save(conceito);
     }
     
-    @GetMapping("/{id}")
+    @GetMapping("{id}")
     public Conceito getConceitoById(@PathVariable String id) {
         return conceitoRepo.findById(id).orElseThrow(() 
         -> new RuntimeException("Não foi possível encontrar o conceito"));
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("{id}")
     public void putConceito(@PathVariable String id, @RequestBody Conceito conceito) {
         if(!id.equals(conceito.getId())) {
             throw new RuntimeException("Os id devem ser iguais");
         }
         conceitoRepo.save(conceito);
     }
-    @DeleteMapping("/{id}")
+    @DeleteMapping("{id}")
     public void delete(@PathVariable String id) {
         conceitoRepo.deleteById(id);
     }

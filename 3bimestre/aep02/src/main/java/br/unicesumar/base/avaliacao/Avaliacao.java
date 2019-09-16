@@ -7,12 +7,13 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 
+@Entity
 public class Avaliacao {
 
     @Id
     private String id;
 
-    @Column(name = "nome")
+    @Column(name = "avaliacao")
     @NotNull
     private String nome;
 

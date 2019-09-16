@@ -19,10 +19,12 @@ public class Conceito {
     
     @OneToOne(cascade = CascadeType.ALL)
     @NotNull
+    @JoinColumn(name = "avaliacao")
     private Avaliacao avaliacao;
     
     @ManyToOne(cascade = CascadeType.ALL)
     @NotNull
+    @JoinColumn(name = "aluno")
     private Aluno aluno;
     
     @OneToOne(cascade = CascadeType.ALL)

@@ -1,11 +1,10 @@
 package br.unicesumar.base.avaliacao;
 
-import java.util.UUID;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
+import java.util.UUID;
 
 @Entity
 public class Avaliacao {

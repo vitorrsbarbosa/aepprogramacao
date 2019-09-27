@@ -1,10 +1,8 @@
 package br.unicesumar.base.aluno;
 
-import java.util.UUID;
-
-
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.UUID;
 
 @Entity
 public class Aluno {

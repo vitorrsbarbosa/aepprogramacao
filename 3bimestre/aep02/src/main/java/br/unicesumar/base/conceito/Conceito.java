@@ -1,14 +1,12 @@
 package br.unicesumar.base.conceito;
 
-import java.util.UUID;
-
-
-import javax.persistence.*;
-import javax.validation.constraints.NotNull;
-
 import br.unicesumar.base.aluno.Aluno;
 import br.unicesumar.base.avaliacao.Avaliacao;
 import br.unicesumar.base.avaliacao.Avaliacao.Nota;
+
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import java.util.UUID;
 
 @Entity
 @Table(name = "CONCEITO")
